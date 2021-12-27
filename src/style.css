@@ -36,11 +36,12 @@ ul {
     font-size: 25px;
 }
 
-li {
-    text-decoration: none;
+ul.show {
+    display:block;
 }
 
-.logo {
+li {
+    text-decoration: none;
 }
 
 h1 {
@@ -121,7 +122,7 @@ a {
 
 .logo {
     height:50px;
-    margin: 30px 0px 0px 30px;
+    margin: 25px 0px 0px 25px;
 }
 
 .about-me {
@@ -176,7 +177,45 @@ hr {
     margin-right: 20px;
 }
 
+.hamburger {
+   display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .hamburger {
+        display: block;
+        border: 0px;
+        color: white;
+        background-color: transparent;
+        font-size: 30px;
+        margin: 10px 0px;
+        align-self: flex-end;
+    }
+
+    ul{
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;  
+        flex-direction: column-reverse;
+        background-color: #6c5671;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+
+
 @media only screen and (max-width: 1290px){
+    .header-text {
+        margin-left: 10px;
+        margin-bottom: 10PX;
+    }
+    
     .card-container {
         display:flex;
         flex-wrap: wrap;
@@ -199,27 +238,103 @@ hr {
         width: 30px;
         height: 30px;
     }
-    
+
+    /* h1 {
+        font-size: 50px;
+        margin:0px;
+    }
+    p {
+        font-size: 30px;
+     }
+     */
 }
 
-/* @media only screen and (max-width: 500px){
+@media only screen and (max-width: 565px){
+
     .card-container {
         display:flex;
         flex-wrap: wrap;
     }
 
-    .project-card {
-        width: 125px;
-        height: 200px;
-        background-color: #fff7e4;
-        box-shadow: 5px 5px 20px #6c5671;
-        padding: 10px;
-        margin-bottom: 15px;
+
+    h1 {
+        font-size: 50px;
+        margin:0px;
     }
 
-    .card-image{
-        width: 100px;
-        height:100px;
+    p {
+        font-size: 20px;
     }
 
-} */
+     .header-text {
+         padding: 20px;
+         margin: 0px;
+    }
+    .socials {
+        margin-right: 0px;
+    }
+    
+    .header-button {
+        width: 175px;
+        height: 45px;
+    } 
+
+    hr {
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 360px){
+
+    .card-container {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .header-container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+    .socials {
+        justify-content: space-between;
+        flex-direction: row;
+        margin-right: 0px;
+        margin: 30px 0px 50px 0px;
+        width: 90%;
+        padding-bottom: 0px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin:0px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+     .header-text {
+         padding: 20px;
+         margin: 0px;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+    .header-button {
+        width: 175px;
+        height: 45px;
+        margin-top: 40px;
+    } 
+
+    hr {
+        visibility: hidden;
+    }
+
+}
