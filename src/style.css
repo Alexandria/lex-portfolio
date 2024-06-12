@@ -232,53 +232,6 @@ hr {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .hamburger {
-    display: block;
-    border: 0px;
-    color: white;
-    background-color: transparent;
-    font-size: 30px;
-    margin: 10px 0px;
-    align-self: flex-end;
-  }
-  .bio {
-    font-size: 1rem;
-  }
-
-  ul {
-    display: none;
-  }
-
-  nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column-reverse;
-    background-color: #6c5671;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  input {
-    height: 1.5rem;
-  }
-
-  textarea {
-    height: 5rem;
-  }
-
-  .form {
-    width: 100%;
-    border-radius: 0px;
-  }
-
-  .form-inputs {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 1290px) {
   .header-text {
     margin-left: 10px;
@@ -330,12 +283,62 @@ hr {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+    border: 0px;
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 10px 0px;
+    align-self: flex-end;
+  }
+  .bio {
+    font-size: 1rem;
+  }
+
+  ul {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    background-color: #6c5671;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  input {
+    height: 1.5rem;
+  }
+
+  textarea {
+    height: 5rem;
+  }
+
+  .form {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .form-inputs {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 565px) {
   .card-container {
     display: flex;
     flex-wrap: wrap;
   }
 
+  iframe {
+    width: 415;
+  }
   h1 {
     font-size: 50px;
     margin: 0px;
@@ -380,7 +383,14 @@ hr {
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
+  iframe {
+    height: 600px;
+  }
+
+  .game-section {
+    height: 700px;
+  }
   .card-container {
     display: flex;
     flex-wrap: wrap;
