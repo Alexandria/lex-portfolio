@@ -232,6 +232,20 @@ hr {
   display: none;
 }
 
+.game-section {
+  -webkit-overflow-scrolling: touch;
+  /* overflow: auto; */
+  /* overflow-y: scroll; */
+  height: 600px;
+  padding: 30px;
+}
+
+#how-to-play {
+  position: absolute;
+  color: whitesmoke;
+  left: 50px;
+}
+
 @media only screen and (max-width: 1290px) {
   .header-text {
     margin-left: 10px;
