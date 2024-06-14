@@ -232,6 +232,12 @@ hr {
   display: none;
 }
 
+#how-to-play {
+  position: absolute;
+  color: whitesmoke;
+  left: 50px;
+}
+
 @media only screen and (max-width: 1290px) {
   .header-text {
     margin-left: 10px;
