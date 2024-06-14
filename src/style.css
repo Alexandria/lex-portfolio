@@ -232,6 +232,12 @@ hr {
   display: none;
 }
 
+.game-section {
+  -webkit-overflow-scrolling: touch;
+  height: 550px;
+  padding: 30px;
+}
+
 #how-to-play {
   position: absolute;
   color: whitesmoke;
